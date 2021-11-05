@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import ContactForm from "../../components/contact/contactForm";
+import ContactForm from "../../components/contact/ContactForm";
 
 function ContantPage() {
   return (
