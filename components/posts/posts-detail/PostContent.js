@@ -1,14 +1,11 @@
 import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
-import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
+import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
 
 import Image from "next/image";
 
 import PostHeader from "./PostHeader";
 import styles from "./PostContent.module.css";
-
-SyntaxHighlighter.registerLanguage('js', js)
 
 const PostContent = ({ post }) => {
   const imagePath = `/images/posts/${post.slug}/${post.image}`;
